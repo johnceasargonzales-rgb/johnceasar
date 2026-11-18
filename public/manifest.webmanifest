@@ -1,0 +1,10 @@
+{
+  "name": "Sinta Pangasinan - Discover the Extraordinary",
+  "short_name": "Sinta Pangasinan",
+  "description": "A lightweight destination and culture guide for Pangasinan.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f6ef",
+  "theme_color": "#164d42",
+  "icons": [{ "src": "/icons/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

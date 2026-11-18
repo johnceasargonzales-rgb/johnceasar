@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 960" role="img" aria-label="Illustration of emerald islets above turquoise waters">
+<defs>
+<linearGradient id="sea" x2=".12" y2="1"><stop stop-color="#7ac7c6"/><stop offset=".48" stop-color="#318b9a"/><stop offset="1" stop-color="#134f65"/></linearGradient>
+<linearGradient id="sky" x2="0" y2="1"><stop stop-color="#f8e9bd"/><stop offset="1" stop-color="#c5e0d6"/></linearGradient>
+<linearGradient id="g" x2=".3" y2="1"><stop stop-color="#729e64"/><stop offset=".55" stop-color="#335c49"/><stop offset="1" stop-color="#163f3b"/></linearGradient>
+<linearGradient id="l" x2="0" y2="1"><stop stop-color="#e2d3aa"/><stop offset="1" stop-color="#b4a686"/></linearGradient>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".49" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".055"/></feComponentTransfer></filter>
+<filter id="shadow" x="-20%" y="-40%" width="150%" height="200%"><feGaussianBlur stdDeviation="13"/></filter>
+</defs>
+<rect width="1300" height="960" fill="url(#sky)"/>
+<circle cx="1030" cy="151" r="86" fill="#f8dca7" opacity=".87"/>
+<path d="M0 290C300 257 477 278 695 260s391-25 605 21v679H0Z" fill="url(#sea)"/>
+<path d="M0 358c210-35 443 20 698-16s430-20 602-31M0 450c304-54 458 49 750 0s337-28 550-12M0 621c280-32 487 43 810-13s334-13 490-40M0 842c312-65 506 27 756-22s377-43 544-28" stroke="#a1e0d6" stroke-opacity=".28" stroke-width="4" fill="none"/>
+<g opacity=".5" fill="#d7f2dd"><path d="M146 515c23-18 60-21 82-16 15 3 16 13-4 16-29 5-55 9-78 0Z"/><path d="M1003 697c45-12 78-12 110-4 18 5 13 13-12 16l-98-12Z"/></g>
+<g filter="url(#shadow)" opacity=".28" fill="#001d33"><ellipse cx="221" cy="538" rx="180" ry="42"/><ellipse cx="746" cy="528" rx="272" ry="70"/><ellipse cx="1136" cy="424" rx="144" ry="38"/><ellipse cx="1056" cy="767" rx="211" ry="62"/></g>
+<g>
+<path d="M39 481Q57 431 134 410q100-46 185-17 83 25 101 75 11 31-28 54-74 46-210 45Q74 572 39 526q-13-19 0-45Z" fill="url(#l)"/>
+<path d="M40 477q58-74 135-82 118-18 185 22 50 29 55 58-36 46-142 54-132 15-233-52Z" fill="url(#g)"/>
+<path d="M99 447q58-31 113-27 64 4 108 26" stroke="#9ab67a" stroke-opacity=".65" stroke-width="16" fill="none" stroke-linecap="round"/>
+</g>
+<g>
+<path d="M456 465q34-77 162-122 150-48 276-5 120 35 149 133 10 41-24 74-93 91-284 97-184 10-263-56-45-40-16-121Z" fill="#c5bf95"/>
+<path d="M470 465q29-69 150-112 159-45 269 3 91 35 121 101-30 70-114 99-165 59-335 18-67-16-91-109Z" fill="url(#g)"/>
+<path d="M549 444q119-76 243-40 50 12 90 42" stroke="#88ac78" stroke-width="19" stroke-linecap="round" fill="none" opacity=".75"/>
+<path d="M565 502q86 44 186 28" stroke="#224939" stroke-width="15" opacity=".58" fill="none"/>
+<path d="M880 562q-44 21-115 21" stroke="#e5d2a7" stroke-width="10" stroke-linecap="round" opacity=".95" fill="none"/>
+</g>
+<g>
+<path d="M1009 390q35-60 108-69 78-11 130 42 29 40 6 76-31 49-114 52-68 6-114-42-22-21-16-59Z" fill="#b9b38e"/>
+<path d="M1016 391q40-57 104-57 88 3 120 53-20 55-105 65-74 3-119-61Z" fill="url(#g)"/>
+<path d="M1072 365q65-16 119 24" stroke="#98bb84" stroke-width="11" fill="none" opacity=".62" stroke-linecap="round"/>
+</g>
+<g>
+<path d="M852 740q35-80 127-103 132-36 226 25 60 34 62 86 4 56-82 86-141 46-265-2-72-30-68-92Z" fill="#c4b891"/>
+<path d="M861 740q22-74 125-99 129-30 211 33 45 30 53 65-81 67-207 64-128 0-182-63Z" fill="url(#g)"/>
+<path d="M938 711q78-39 159-13" stroke="#97b57b" stroke-width="16" fill="none" stroke-linecap="round"/>
+</g>
+<g>
+<path d="M312 753q31-35 80-29 46 4 69 43 13 27-15 43-42 24-97 15-51-9-54-35-2-17 17-37Z" fill="#cfc49c"/>
+<path d="M307 765q32-44 87-34 42 7 58 35-23 32-69 31-59-4-76-32Z" fill="#426e54"/>
+</g>
+<g stroke="#f6fff0" fill="none" opacity=".92"><path d="m213 658 21 4-21 7Z" fill="#fff8d5" stroke="none"/><path d="m222 664 2 22" stroke-width="3"/><path d="M199 688q28 7 49 0" stroke-width="3"/><path d="m1091 552 19 5-19 6Z" fill="#fff7e1" stroke="none"/><path d="m1100 558 1 22" stroke-width="3"/><path d="M1083 582q28 8 43 1" stroke-width="3"/></g>
+
+</svg>

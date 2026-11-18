@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 960" role="img" aria-label="Illustration of Cape Bolinao Lighthouse on a scenic coast">
+<defs>
+<linearGradient id="sky" x2="0" y2="1"><stop stop-color="#e6a08e"/><stop offset=".5" stop-color="#f6d4b0"/><stop offset="1" stop-color="#dce7d9"/></linearGradient>
+<linearGradient id="ocean" x2="0" y2="1"><stop stop-color="#80b9b7"/><stop offset="1" stop-color="#27636d"/></linearGradient>
+<linearGradient id="hill" x2="0" y2="1"><stop stop-color="#63816b"/><stop offset="1" stop-color="#294c46"/></linearGradient>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".42" numOctaves="2"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".065"/></feComponentTransfer></filter>
+<filter id="shade"><feGaussianBlur stdDeviation="22"/></filter>
+</defs>
+<rect width="1300" height="960" fill="url(#sky)"/>
+<circle cx="995" cy="308" r="127" fill="#f9dba9" opacity=".92"/>
+<path d="M0 478q206-18 419 14 186 26 388-16 243-49 493-8v492H0Z" fill="url(#ocean)"/>
+<path d="M0 532q153-12 320 3t325 1q259-27 655 5M0 650q198-21 385 14 206 21 465-10 216-16 450 16M0 798q239-33 457 8 230 24 397-5 247-29 446-6" fill="none" stroke="#cde7cf" stroke-opacity=".31" stroke-width="5"/>
+<path d="M0 685q195-76 353-38 158 37 304 5 163-30 310-24 182 9 333 54v278H0Z" fill="#647b67"/>
+<path d="M0 734q230-81 433-27 197 64 424-16 257-60 443 56v213H0Z" fill="url(#hill)"/>
+<path d="M0 820q274-125 482-34 155 76 306 43 293-58 512 63v68H0Z" fill="#284f42"/>
+<g opacity=".57" fill="#203e37"><ellipse cx="105" cy="710" rx="100" ry="55"/><ellipse cx="252" cy="711" rx="119" ry="44"/><ellipse cx="1027" cy="718" rx="174" ry="60"/><ellipse cx="1173" cy="760" rx="190" ry="70"/></g>
+<g transform="translate(385 120)">
+<ellipse cx="216" cy="650" rx="155" ry="26" fill="#163e3d" opacity=".2" filter="url(#shade)"/>
+<path d="M133 615 169 186h97l39 429Z" fill="#f5efe2" stroke="#dbcfc0" stroke-width="8"/>
+<path d="M171 186h95l7 88H164Z" fill="#fdf5e6"/>
+<path d="M153 392h136l5 26H150Z" fill="#d7906d"/>
+<path d="M140 541h158l5 33H137Z" fill="#d48c6c"/>
+<path d="M201 186 183 615" stroke="#e9c9b5" stroke-width="16" opacity=".38"/>
+<rect x="189" y="314" width="45" height="78" rx="20" fill="#486d6e" stroke="#cb9c81" stroke-width="8"/>
+<rect x="202" y="493" width="43" height="72" rx="18" fill="#486d6e" stroke="#cb9c81" stroke-width="8"/>
+<path d="M158 178h120l12 17H147Z" fill="#cf906e"/>
+<path d="M175 176V115q5-23 24-28h39q20 5 21 28v61Z" fill="#f4e8d3" stroke="#d0a587" stroke-width="7"/>
+<rect x="192" y="109" width="50" height="57" rx="6" fill="#4a6467"/>
+<path d="M154 110h124l-8-22h-106Z" fill="#d18a71"/>
+<path d="M176 86 215 49l40 37Z" fill="#f6dfc8" stroke="#b47e68" stroke-width="7"/>
+<path d="M216 49V23" stroke="#f5e6d8" stroke-width="6"/>
+<path d="M142 189h150M157 103h118" stroke="#fff9e9" stroke-width="7"/>
+<path d="M143 188v17m24-16v17m25-17v17m25-17v17m25-17v17m25-17v17m24-17v17" stroke="#fff9e9" stroke-width="6"/>
+<path d="M113 615h212l10 18H103Z" fill="#d9c1a7"/>
+<path d="M97 633h242l8 22H90Z" fill="#ece1ce"/>
+</g>
+<g fill="#4a6851"><circle cx="168" cy="741" r="68"/><circle cx="116" cy="778" r="68"/><circle cx="215" cy="782" r="79"/><circle cx="1050" cy="823" r="110"/><circle cx="1167" cy="802" r="113"/><circle cx="1244" cy="823" r="85"/></g>
+<g fill="#cc6f61" opacity=".9"><circle cx="88" cy="814" r="14"/><circle cx="183" cy="766" r="10"/><circle cx="222" cy="824" r="14"/><circle cx="1163" cy="821" r="15"/><circle cx="1073" cy="854" r="10"/></g>
+
+</svg>

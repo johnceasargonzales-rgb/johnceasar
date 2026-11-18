@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 960" role="img" aria-label="Illustration of hot spring pools surrounded by green hills">
+<defs>
+<linearGradient id="sky" x2="0" y2="1"><stop stop-color="#a4cfcb"/><stop offset="1" stop-color="#f6e9c6"/></linearGradient>
+<linearGradient id="hill" x2="0" y2="1"><stop stop-color="#8dac77"/><stop offset="1" stop-color="#365f4d"/></linearGradient>
+<linearGradient id="water" x2=".3" y2="1"><stop stop-color="#99d5c3"/><stop offset="1" stop-color="#348b8d"/></linearGradient>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".44" numOctaves="2"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".053"/></feComponentTransfer></filter>
+</defs>
+<rect width="1300" height="960" fill="url(#sky)"/>
+<circle cx="1072" cy="179" r="84" fill="#f4dda7"/>
+<path d="M0 464q111-89 247-100 119-14 215 59 113-167 273-169 169 0 283 174 174-63 282 13v519H0Z" fill="#9ab290"/>
+<path d="M0 544q136-165 285-141 124 9 199 129 154-240 299-228 137-3 239 211 169-124 278-37v482H0Z" fill="url(#hill)"/>
+<path d="M0 601q240-127 390 32 145-115 265-98 155-11 255 80 183-91 390-34v379H0Z" fill="#406d59"/>
+<g fill="#315c4d" opacity=".86"><circle cx="63" cy="552" r="76"/><circle cx="177" cy="554" r="88"/><circle cx="322" cy="540" r="57"/><circle cx="972" cy="580" r="91"/><circle cx="1100" cy="555" r="115"/><circle cx="1260" cy="574" r="89"/></g>
+<path d="M0 704q337-42 615-20 261 0 685 41v235H0Z" fill="#dfd6b7"/>
+<path d="M0 732q360-48 634-19 248-10 666 25" stroke="#f4e2c4" stroke-width="23" fill="none"/>
+<path d="M194 745q97-62 293-58 229-13 345 57 41 27 2 56-130 89-337 84-207 4-320-81-35-28 17-58Z" fill="#b4ad92"/>
+<path d="M210 752q104-57 290-52 205-7 320 55 24 15-10 37-138 73-321 78-192-2-292-80-25-19 13-38Z" fill="url(#water)"/>
+<path d="M263 765q140-67 312-32M302 806q112 38 288 22M661 779q61-13 100-2" stroke="#d3f1dc" stroke-width="7" stroke-linecap="round" fill="none" opacity=".64"/>
+<path d="M818 819q75-39 173-27 135-5 197 47 19 19-9 38-69 47-197 48-136-3-185-50-21-22 21-56Z" fill="#aba78b"/>
+<path d="M828 831q55-36 164-25 123-8 184 38 11 14-13 24-60 40-179 39-134-3-173-50-11-13 17-26Z" fill="#63b3a8"/>
+<g stroke="#eadbc2" fill="none"><path d="M150 666h987M231 668v90M426 668v41M627 668v41M824 668v77M1025 668v93" stroke-width="9"/>
+<path d="M150 664 222 587h832l84 77" stroke-width="19"/><path d="M222 589h833" stroke-width="12"/></g>
+<g stroke="#f6f7e5" fill="none" stroke-linecap="round" opacity=".47"><path d="M449 648q-20-23 5-42t3-37" stroke-width="6"/><path d="M507 644q-18-27 3-43t6-35" stroke-width="5"/><path d="M562 650q-19-19 5-45t5-40" stroke-width="5"/></g>
+<g fill="#355e4e"><path d="M0 785q61-114 137-75l-20 250H0Z"/><path d="M1200 748q56-60 100-14v226h-115Z"/><circle cx="85" cy="730" r="58"/><circle cx="1233" cy="726" r="67"/></g>
+<g fill="#8caf6e"><circle cx="39" cy="743" r="30"/><circle cx="1263" cy="740" r="41"/></g>
+
+</svg>
