@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - main
+
   workflow_dispatch:
 
 permissions:
@@ -22,10 +23,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: 22
           cache: npm
@@ -38,7 +39,7 @@ jobs:
         env:
           NEXT_PUBLIC_BASE_PATH: /johnceasar
 
-      - name: Upload website
+      - name: Upload static website
         uses: actions/upload-pages-artifact@v4
         with:
           path: ./out
@@ -52,6 +53,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: Deploy website
+      - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

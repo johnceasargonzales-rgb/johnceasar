@@ -1,5 +1,22 @@
-export type Category = 'Coast & Islands' | 'Heritage & History' | 'Nature & Wellness';
+
+export type Category =
+  | 'Coast & Islands'
+  | 'Heritage & History'
+  | 'Nature & Wellness';
+
 export type Scene = 'islands' | 'lighthouse' | 'springs';
+
+// GitHub Pages repository path
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
+// Image path helper
+export function assetPath(path: string): string {
+  if (/^(https?:\/\/|data:|blob:)/i.test(path)) {
+    return path;
+  }
+
+  return `${BASE_PATH}${path.startsWith('/') ? path : `/${path}`}`;
+}
 
 export type Destination = {
   slug: string;
@@ -7,6 +24,8 @@ export type Destination = {
   place: string;
   category: Category;
   scene: Scene;
+  cardImage: string;
+  heroImage: string;
   short: string;
   intro: string;
   story: string[];
@@ -28,6 +47,8 @@ export const destinations: Destination[] = [
     place: 'Alaminos City',
     category: 'Coast & Islands',
     scene: 'islands',
+    cardImage: assetPath('/photos/hundred-islands-720.webp'),
+    heroImage: assetPath('/photos/hundred-islands-1280.webp'),
     tag: 'The coastal icon',
     number: '01',
     short: 'A maze of emerald islets, warm sea breezes, and endless blue.',
@@ -37,9 +58,18 @@ export const destinations: Destination[] = [
       'For generations, the sea has shaped the livelihoods and stories of nearby communities. A visit is an opportunity to appreciate the islands, meet local guides, and help protect the marine environment for future travelers.'
     ],
     highlights: [
-      { title: 'Island-hopping', description: 'Discover scenic coves and island views with a locally authorized boat operator.' },
-      { title: 'Viewpoints', description: 'Enjoy panoramic vistas where accessible and permitted by park staff.' },
-      { title: 'Marine life', description: 'Observe coastal ecosystems respectfully; never step on coral or collect wildlife.' }
+      {
+        title: 'Island-hopping',
+        description: 'Discover scenic coves and island views with a locally authorized boat operator.'
+      },
+      {
+        title: 'Viewpoints',
+        description: 'Enjoy panoramic vistas where accessible and permitted by park staff.'
+      },
+      {
+        title: 'Marine life',
+        description: 'Observe coastal ecosystems respectfully; never step on coral or collect wildlife.'
+      }
     ],
     tips: [
       'Begin at Lucap Wharf in Alaminos City and confirm the current visitor process.',
@@ -53,12 +83,15 @@ export const destinations: Destination[] = [
     sourceName: 'Hundred Islands National Park visitor website',
     travelNote: 'Coastal trip · Weather dependent',
   },
+
   {
     slug: 'cape-bolinao-lighthouse',
     title: 'Cape Bolinao Lighthouse',
     place: 'Bolinao',
     category: 'Heritage & History',
     scene: 'lighthouse',
+    cardImage: assetPath('/photos/cape-bolinao-lighthouse-720.webp'),
+    heroImage: assetPath('/photos/cape-bolinao-lighthouse-1280.webp'),
     tag: 'A beacon through time',
     number: '02',
     short: 'A historic coastal sentinel with stories carried by the wind.',
@@ -68,9 +101,18 @@ export const destinations: Destination[] = [
       'Today, the structure is a much-loved landmark. It invites visitors to look beyond the view and think about the people, trade, and coastal communities connected by the sea.'
     ],
     highlights: [
-      { title: 'Maritime heritage', description: 'Learn how coastal lights served as navigational aids for passing vessels.' },
-      { title: 'Coastal scenery', description: 'Take in wide views and changing light near the western shoreline.' },
-      { title: 'Architecture', description: 'Observe the details of the lighthouse from public, permitted areas.' }
+      {
+        title: 'Maritime heritage',
+        description: 'Learn how coastal lights served as navigational aids for passing vessels.'
+      },
+      {
+        title: 'Coastal scenery',
+        description: 'Take in wide views and changing light near the western shoreline.'
+      },
+      {
+        title: 'Architecture',
+        description: 'Observe the details of the lighthouse from public, permitted areas.'
+      }
     ],
     tips: [
       'Visit during daylight and allow time to enjoy the coastal landscape.',
@@ -84,12 +126,15 @@ export const destinations: Destination[] = [
     sourceName: 'Province of Pangasinan tourism feature',
     travelNote: 'Historic coastal landmark · Daytime visits',
   },
+
   {
     slug: 'balungao-hot-springs',
     title: 'Balungao Hot Springs',
     place: 'Balungao',
     category: 'Nature & Wellness',
     scene: 'springs',
+    cardImage: assetPath('/photos/balungao-hot-springs-720.webp'),
+    heroImage: assetPath('/photos/balungao-hot-springs-1280.webp'),
     tag: 'A refreshing retreat',
     number: '03',
     short: 'Warm springs, green hills, and a slower rhythm of adventure.',
@@ -99,9 +144,18 @@ export const destinations: Destination[] = [
       'Balungao is also known for its outdoor recreation and local community life. The area brings together relaxation and adventure, while reminding visitors to care for the landscape that makes these experiences possible.'
     ],
     highlights: [
-      { title: 'Hot and cold springs', description: 'Experience a relaxing waterside retreat where facilities are operating and available.' },
-      { title: 'Hilltop setting', description: 'Appreciate the greenery and the geological story of Mount Balungao.' },
-      { title: 'Outdoor adventure', description: 'Ask local operators which recreational activities are currently offered.' }
+      {
+        title: 'Hot and cold springs',
+        description: 'Experience a relaxing waterside retreat where facilities are operating and available.'
+      },
+      {
+        title: 'Hilltop setting',
+        description: 'Appreciate the greenery and the geological story of Mount Balungao.'
+      },
+      {
+        title: 'Outdoor adventure',
+        description: 'Ask local operators which recreational activities are currently offered.'
+      }
     ],
     tips: [
       'Confirm opening schedules, water conditions, and admission details with the operator.',
@@ -117,14 +171,22 @@ export const destinations: Destination[] = [
   }
 ];
 
+// Find destination by slug
 export function getDestination(slug: string) {
-  return destinations.find((destination) => destination.slug === slug);
+  return destinations.find(
+    (destination) => destination.slug === slug
+  );
 }
 
+// Available categories
 export const categories: Array<'All places' | Category> = [
-  'All places', 'Coast & Islands', 'Heritage & History', 'Nature & Wellness'
+  'All places',
+  'Coast & Islands',
+  'Heritage & History',
+  'Nature & Wellness'
 ];
 
+// Google Maps URL generator
 export function createMapUrl(query: string) {
   return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
 }
