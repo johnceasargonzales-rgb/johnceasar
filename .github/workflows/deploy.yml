@@ -5,7 +5,6 @@ on:
   push:
     branches:
       - main
-
   workflow_dispatch:
 
 permissions:
@@ -39,10 +38,26 @@ jobs:
         env:
           NEXT_PUBLIC_BASE_PATH: /johnceasar
 
-      - name: Upload static website
-        uses: actions/upload-pages-artifact@v4
+      # Ensure GitHub Pages does not process _next using Jekyll
+      - name: Create nojekyll file
+        run: touch out/.nojekyll
+
+      # Stop deployment if important files are missing
+      - name: Verify production files
+        run: |
+          test -f out/index.html
+          test -f out/.nojekyll
+          test -d out/_next/static
+          test -n "$(find out/_next/static -type f -name '*.css' -print -quit)"
+          test -n "$(find out/_next/static -type f -name '*.js' -print -quit)"
+          test -f out/photos/hundred-islands-1280.webp
+          echo "All required production files exist."
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v5
         with:
           path: ./out
+          include-hidden-files: true
 
   deploy:
     needs: build
